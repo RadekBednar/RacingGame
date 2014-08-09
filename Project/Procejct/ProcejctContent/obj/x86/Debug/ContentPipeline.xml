@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb</Output>
+      <Output>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb</Output>
       <Time>2014-08-01T14:51:54+02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb</Output>
+      <Output>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb</Output>
       <Time>2014-08-01T14:51:54+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -25,10 +25,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\ProcejctContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\ProcejctContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\ProcejctContent\</RootDirectory>
+      <LoggerRootDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\ProcejctContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

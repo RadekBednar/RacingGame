@@ -15,3 +15,12 @@ C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Micros
 C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.exe
 C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.pdb
 C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.exe.config
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.exe.config
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.exe
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.pdb
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.csprojResolveAssemblyReference.cache
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.exe
+E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.pdb
