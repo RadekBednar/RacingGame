@@ -112,11 +112,11 @@ namespace Procejct
                 }
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.Right) && Angle >= -1 * (System.Math.PI / 5))
+            if (Keyboard.GetState().IsKeyDown(Keys.Right) && Angle >= -1 * (System.Math.PI / 4))
             {
                 Angle -= 0.01f;
             }
-            else if (Keyboard.GetState().IsKeyDown(Keys.Left) && Angle <= (System.Math.PI / 5))
+            else if (Keyboard.GetState().IsKeyDown(Keys.Left) && Angle <= (System.Math.PI / 4))
             {
                 Angle += 0.01f;
             }
