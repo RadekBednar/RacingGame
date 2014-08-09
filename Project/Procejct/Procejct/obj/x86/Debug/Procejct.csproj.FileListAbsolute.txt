@@ -1,0 +1,17 @@
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\bin\x86\Debug\Procejct.exe
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\bin\x86\Debug\Procejct.pdb
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\obj\x86\Debug\Procejct.exe
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\obj\x86\Debug\Procejct.pdb
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\Procejct\obj\x86\Debug\Procejct.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.exe
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.pdb
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.exe
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.pdb
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Procejct.exe.config

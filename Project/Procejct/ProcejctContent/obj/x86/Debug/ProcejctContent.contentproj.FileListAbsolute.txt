@@ -1,0 +1,2 @@
+E:\Dokumenty\Projekty\Git\RacingGame\Procejct\ProcejctContent\obj\x86\Debug\ProcejctContent.contentprojResolveAssemblyReference.cache
+C:\Users\Radek\Desktop\RacingGame\Project\Procejct\ProcejctContent\obj\x86\Debug\ProcejctContent.contentprojResolveAssemblyReference.cache
