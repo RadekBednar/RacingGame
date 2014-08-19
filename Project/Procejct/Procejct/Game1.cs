@@ -17,7 +17,7 @@ namespace Procejct
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
+        public GraphicsDeviceManager graphics;
 
         public SpriteBatch spriteBatch;
 

@@ -19,6 +19,8 @@ namespace Procejct
     {
         public Texture2D Texture;
 
+        public Model CarModel;
+
         Game1 Game1;
 
         public Body body;
@@ -50,6 +52,8 @@ namespace Procejct
         {
             Texture = Game1.Content.Load<Texture2D>("Ferrari");
 
+            CarModel = Game.Content.Load<Model>("Model");
+
             PolygonDef polygonDef = new PolygonDef();
 
             polygonDef.SetAsBox(Texture.Width / 2, Texture.Height / 2);
@@ -75,6 +79,8 @@ namespace Procejct
             Angle = 0f;
 
             Speed = 0f;
+
+           
 
             base.LoadContent();
         }
@@ -137,10 +143,32 @@ namespace Procejct
 
         public override void Draw(GameTime gameTime)
         {
-            Rectangle? r = null;
+            /*Rectangle? r = null;
 
             Game1.spriteBatch.Draw(Texture, new Vector2(body.GetPosition().X, body.GetPosition().Y), r, Microsoft.Xna.Framework.Color.White, body.GetAngle(), new Vector2(Texture.Width / 2, Texture.Height / 2), 1, SpriteEffects.None, 0);
-            
+           */
+
+            Matrix[] transforms = new Matrix[CarModel.Bones.Count];
+
+            CarModel.CopyAbsoluteBoneTransformsTo(transforms);
+
+            foreach (ModelMesh mesh in CarModel.Meshes)
+            {
+
+                foreach (BasicEffect effect in mesh.Effects)
+                {
+                    effect.EnableDefaultLighting();
+
+                    effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateScale(1f);
+
+                    effect.View = Matrix.CreateLookAt(new Vector3(-20, 0, 0), Vector3.Zero, Vector3.Forward);
+
+                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
+                }
+
+                mesh.Draw();
+            }
+
             base.Draw(gameTime);
         }
     }

@@ -1,2 +1,3 @@
 Content\Ferrari.xnb
 Content\Barrier.xnb
+Content\Model.xnb

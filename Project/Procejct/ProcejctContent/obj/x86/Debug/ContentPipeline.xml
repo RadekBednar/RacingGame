@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb</Output>
-      <Time>2014-08-19T15:34:49.2112926+02:00</Time>
+      <Output>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Ferrari.xnb</Output>
+      <Time>2014-08-19T17:19:11.0747063+02:00</Time>
     </Item>
     <Item>
       <Source>Barrier.png</Source>
@@ -16,8 +16,28 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb</Output>
-      <Time>2014-08-19T15:34:49.2092925+02:00</Time>
+      <Output>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Barrier.xnb</Output>
+      <Time>2014-08-19T17:19:11.0737056+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Model.fbx</Source>
+      <Name>Model</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model.xnb</Output>
+      <Time>2014-08-19T18:18:56.1316188+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Model_0.xml</Key>
+        <Value>2014-08-19T18:18:57.7447058+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Model.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Model_0.xml</Output>
+      <Time>2014-08-19T18:18:56.1316188+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +45,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\ProcejctContent\</RootDirectory>
-      <LoggerRootDirectory>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\</LoggerRootDirectory>
-      <IntermediateDirectory>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\ProcejctContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\ProcejctContent\</RootDirectory>
+      <LoggerRootDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\ProcejctContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -57,7 +77,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2014-07-31T22:54:50.8871517+02:00</Value>
+        <Value>2014-07-27T11:18:24.131997+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
