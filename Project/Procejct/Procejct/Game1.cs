@@ -42,8 +42,8 @@ namespace Procejct
         {
             AABB aabb = new AABB();
 
-            aabb.LowerBound = new Vec2(-1000, -1000);
-            aabb.UpperBound = new Vec2(1000, 1000);
+            aabb.LowerBound = new Vec2(-10000, -10000);
+            aabb.UpperBound = new Vec2(10000, 10000);
 
             world = new World(aabb, new Vec2(0, 0), false);
 

@@ -32,7 +32,9 @@ namespace Procejct
 
             centre = new Vector2(CarPosition.X - viewport.Bounds.Width / 2, CarPosition.Y - viewport.Bounds.Height / 2);
 
-            transform = Matrix.CreateTranslation(new Vector3(-centre.X, -centre.Y, 0)) * Matrix.CreateScale(new Vector3(1, 1, 0));
+            transform = Matrix.CreateTranslation(new Vector3(-centre.X, -centre.Y, 0)) * Matrix.CreateTranslation(new Vector3(-viewport.Width / 2, -viewport.Height / 2, 0))
+                * Matrix.CreateRotationZ(-car.body.GetAngle())
+                * Matrix.CreateTranslation(new Vector3(viewport.Width / 2, viewport.Height / 2, 0));/**  * Matrix.CreateScale(new Vector3(1, 1, 0));*/;
         }
     }
 }
