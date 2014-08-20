@@ -52,7 +52,7 @@ namespace Procejct
         {
             Texture = Game1.Content.Load<Texture2D>("Ferrari");
 
-            CarModel = Game.Content.Load<Model>("Model");
+            CarModel = Game.Content.Load<Model>("Model2");
 
             PolygonDef polygonDef = new PolygonDef();
 
@@ -159,9 +159,9 @@ namespace Procejct
                 {
                     effect.EnableDefaultLighting();
 
-                    effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateScale(1f);
+                    effect.World = transforms[mesh.ParentBone.Index];
 
-                    effect.View = Matrix.CreateLookAt(new Vector3(-20, 0, 0), Vector3.Zero, Vector3.Forward);
+                    effect.View = Matrix.CreateLookAt(new Vector3(-15, 0, 0), Vector3.Zero, Vector3.Up);
 
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }

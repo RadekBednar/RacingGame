@@ -34,3 +34,5 @@ E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Mic
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.exe
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\obj\x86\Debug\Procejct.pdb
 E:\Dokumenty\Projekty\GitHub\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model2.xnb
