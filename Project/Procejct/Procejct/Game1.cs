@@ -23,6 +23,8 @@ namespace Procejct
 
         public World world;
 
+        public BasicEffect basicEffect;
+
         Camera camera;
 
         Car car;
@@ -59,6 +61,9 @@ namespace Procejct
             }
 
             camera = new Camera(GraphicsDevice.Viewport);
+
+            basicEffect = new BasicEffect(this.GraphicsDevice);
+            basicEffect.DiffuseColor = new Vector3(1, 0, 0);
 
             base.Initialize();
         }

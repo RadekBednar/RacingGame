@@ -66,10 +66,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model3.xnb</Output>
-      <Time>2014-08-20T21:51:21.8309328+02:00</Time>
+      <Time>2014-08-22T21:01:24.1946432+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Model3_0.xml</Key>
-        <Value>2014-08-20T21:51:38.7829024+02:00</Value>
+        <Value>2014-08-22T21:01:32.286106+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -77,7 +77,27 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Model3_0.xml</Output>
-      <Time>2014-08-20T21:51:21.8309328+02:00</Time>
+      <Time>2014-08-22T21:01:24.1946432+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Model4.fbx</Source>
+      <Name>Model4</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Procejct\Procejct\bin\x86\Debug\Content\Model4.xnb</Output>
+      <Time>2014-08-22T21:08:54.6304066+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Model4_0.xml</Key>
+        <Value>2014-08-22T21:09:06.6540943+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Model4.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Model4_0.xml</Output>
+      <Time>2014-08-22T21:08:54.6304066+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

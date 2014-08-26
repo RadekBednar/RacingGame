@@ -33,6 +33,8 @@ namespace Procejct
 
         float Speed;
 
+        Vector2[] ColisionBody;
+
         public Car(Game game, float Density, float Friction)
             : base(game)
         {
@@ -52,11 +54,29 @@ namespace Procejct
         {
             Texture = Game1.Content.Load<Texture2D>("Ferrari");
 
-            CarModel = Game.Content.Load<Model>("Model3");
+            CarModel = Game.Content.Load<Model>("Model4");
 
             PolygonDef polygonDef = new PolygonDef();
 
-            polygonDef.SetAsBox(Texture.Width / 2, Texture.Height / 2);
+            ColisionBody = new Vector2[] 
+            {
+                new Vector2(-Texture.Width / 2, -Texture.Height / 2),
+                new Vector2(Texture.Width / 2, -Texture.Height / 2),
+                new Vector2(Texture.Width / 2, Texture.Height / 2),
+                new Vector2(-Texture.Width / 2, Texture.Height / 2)
+            };
+
+            polygonDef.Vertices = new Vec2[] 
+            {
+                new Vec2(-Texture.Width / 2, -Texture.Height / 2),
+                new Vec2(Texture.Width / 2, -Texture.Height / 2),
+                new Vec2(Texture.Width / 2, Texture.Height / 2),
+                new Vec2(-Texture.Width / 2, Texture.Height / 2)
+            };
+
+            polygonDef.VertexCount = 4;
+
+            //polygonDef.SetAsBox(Texture.Width / 2, Texture.Height / 2);
 
             polygonDef.Density = Density;
 
@@ -141,16 +161,38 @@ namespace Procejct
             base.Update(gameTime);
         }
 
+        float rot = 0;
+
         public override void Draw(GameTime gameTime)
         {
             /*Rectangle? r = null;
 
             Game1.spriteBatch.Draw(Texture, new Vector2(body.GetPosition().X, body.GetPosition().Y), r, Microsoft.Xna.Framework.Color.White, body.GetAngle(), new Vector2(Texture.Width / 2, Texture.Height / 2), 1, SpriteEffects.None, 0);
-           */
+
+             */ 
+            
+            var vectors = ColisionBody.Concat(ColisionBody.Take(1)).Select((v) => new VertexPositionColor(new Vector3(v.X, v.Y, -1), Microsoft.Xna.Framework.Color.Red)).ToArray();
+
+
+            var Effect = Game1.basicEffect;
+
+            Effect.World = Matrix.Identity;
+
+            Effect.View = Matrix.Identity;
+
+            Effect.Projection = Matrix.CreateOrthographic(Game1.GraphicsDevice.Viewport.Width, Game1.GraphicsDevice.Viewport.Height, 0.1f, 1);
+
+            foreach (EffectPass pass in Effect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+
+                Game1.GraphicsDevice.DrawUserPrimitives(PrimitiveType.LineStrip, vectors, 0, vectors.Length - 1);
+            }
 
             Matrix[] transforms = new Matrix[CarModel.Bones.Count];
 
             CarModel.CopyAbsoluteBoneTransformsTo(transforms);
+            
 
             foreach (ModelMesh mesh in CarModel.Meshes)
             {
@@ -159,9 +201,11 @@ namespace Procejct
                 {
                     effect.EnableDefaultLighting();
 
-                    effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateRotationY(MathHelper.PiOver2) * Matrix.CreateRotationZ(MathHelper.PiOver2) * Matrix.CreateScale(0.5f);
+                    effect.World = Matrix.CreateScale(0.4f) * transforms[mesh.ParentBone.Index];
 
-                    effect.View = Matrix.CreateLookAt(new Vector3(-15, 0, 0), Vector3.Zero, Vector3.Up);
+                    //effect.View = Matrix.CreateLookAt(new Vector3(-15, 0, 0), Vector3.Zero, Vector3.Up);
+
+                    effect.View = Matrix.CreateRotationX(-MathHelper.PiOver2) * Matrix.CreateLookAt(new Vector3(0, 0, -15), Vector3.Zero, Vector3.Up);
 
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }
