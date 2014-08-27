@@ -1,0 +1,9 @@
+C:\Users\Radek\Desktop\Project\Project\Project\bin\x86\Debug\Content\Plane.xnb
+C:\Users\Radek\Desktop\Project\Project\Project\bin\x86\Debug\Project.exe.config
+C:\Users\Radek\Desktop\Project\Project\Project\bin\x86\Debug\Project.exe
+C:\Users\Radek\Desktop\Project\Project\Project\bin\x86\Debug\Project.pdb
+C:\Users\Radek\Desktop\Project\Project\Project\obj\x86\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\Radek\Desktop\Project\Project\Project\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Radek\Desktop\Project\Project\Project\obj\x86\Debug\Project.exe
+C:\Users\Radek\Desktop\Project\Project\Project\obj\x86\Debug\Project.pdb
+C:\Users\Radek\Desktop\Project\Project\Project\bin\x86\Debug\Content\Tires.xnb
