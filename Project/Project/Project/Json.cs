@@ -9,7 +9,7 @@ namespace Project
 {
     public class Json
     {
-        public static JsonData GetMap(string Name)
+        public static MapData GetMap(string Name)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
 
@@ -20,19 +20,21 @@ namespace Project
                 Content = sr.ReadToEnd();
             }
 
-            return serializer.Deserialize<JsonData>(Content);
+            return serializer.Deserialize<MapData>(Content);
         }
-    }
 
-    public class JsonData
-    {
-        public List<MapPartData> MapPartsData { get; set; }
-
-        public List<ObjectData> ObjectsData { get; set; }
-
-        public JsonData()
+        public static CarData GetCar(string Name)
         {
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
 
+            string Content = "";
+
+            using (StreamReader sr = new StreamReader("Data/Cars/" + Name + ".js"))
+            {
+                Content = sr.ReadToEnd();
+            }
+
+            return serializer.Deserialize<CarData>(Content);
         }
     }
 }

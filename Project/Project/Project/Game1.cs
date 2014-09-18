@@ -25,17 +25,28 @@ namespace Project
 
         public World world;
 
-        public Vector2[] Array = new Vector2[]
+        public Camera camera;
+
+        public Car car;
+
+        /*public Vector2[] Array = new Vector2[]
         {
             new Vector2(-35, -35),
-            new Vector2(-45, 0),
             new Vector2(-35, 35),
-            new Vector2(0, 45),
             new Vector2(35, 35),
-            new Vector2(45, 0),
-            new Vector2(35, -35),
-            new Vector2(0, -45)
+            new Vector2(35, -35)
         };
+
+        
+            
+            new Vector2(-45, 0),
+            ,
+            new Vector2(0, 45),
+            ,
+            new Vector2(45, 0),
+            ,
+            new Vector2(0, -45)
+        */
 
         public Game1()
         {
@@ -58,6 +69,14 @@ namespace Project
             basicEffect.DiffuseColor = new Vector3(1, 1, 1);
 
             Components.Add(new Map(this, "MainMap"));
+
+            CarData cd = Json.GetCar("BMW");
+
+            car = new Car(this, cd.Position, cd.CollisionBody, cd.ModelName, cd.Density, cd.Friction, cd.Scale, cd.Angle);
+
+            Components.Add(car);
+
+            camera = new Camera(car);
 
             base.Initialize();
         }
@@ -83,7 +102,7 @@ namespace Project
         {
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
 
-            Drawing.ArrayVectors(Array, this);
+            //Drawing.ArrayVectors(Array, this);
 
             base.Draw(gameTime);
         }

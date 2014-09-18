@@ -60,21 +60,17 @@ namespace Project
 
             //poligonDef.VertexCount = CollisionBody.Length;
 
-            //poligonDef.SetAsBox(20, 20);
+            poligonDef.SetAsBox(1, 1);
 
-            poligonDef.Vertices = new Vec2[]
+            /*poligonDef.Vertices = new Vec2[]
             {
                 new Vec2(-35, -35),
-                new Vec2(-45, 0),
                 new Vec2(-35, 35),
-                new Vec2(0, 45),
                 new Vec2(35, 35),
-                new Vec2(45, 0),
-                new Vec2(35, -35),
-                new Vec2(0, -45)
+                new Vec2(35, -35)
             };
 
-            poligonDef.VertexCount = 8;
+            poligonDef.VertexCount = 4;*/
 
             poligonDef.Density = 20f;
 
@@ -112,7 +108,7 @@ namespace Project
 
                     effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateScale(Scale) * Matrix.CreateTranslation(new Vector3(Body.GetPosition().X, Body.GetPosition().Y, 0));
 
-                    effect.View = Camera.GetView();
+                    effect.View = Game1.camera.GetBetterView();
                     
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }

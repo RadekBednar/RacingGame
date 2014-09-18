@@ -67,7 +67,7 @@ namespace Project
 
                     effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(Position);
 
-                    effect.View = Camera.GetView();
+                    effect.View = Game1.camera.GetBetterView();
 
                     effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }

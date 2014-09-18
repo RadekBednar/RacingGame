@@ -114,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camera.cs" />
+    <Compile Include="Car.cs" />
     <Compile Include="Drawing.cs" />
     <Compile Include="Json.cs" />
     <Compile Include="Map.cs" />

@@ -32,7 +32,7 @@ namespace Project
 
         protected override void LoadContent()
         {
-            JsonData Data = Json.GetMap(MapName);
+            MapData Data = Json.GetMap(MapName);
 
             MapParts = new List<MapPart>();
 
@@ -71,6 +71,18 @@ namespace Project
         public override void Update(GameTime gameTime)
         {
             base.Update(gameTime);
+        }
+    }
+
+    public class MapData
+    {
+        public List<MapPartData> MapPartsData { get; set; }
+
+        public List<ObjectData> ObjectsData { get; set; }
+
+        public MapData()
+        {
+
         }
     }
 }
