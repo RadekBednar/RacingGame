@@ -17,3 +17,4 @@ E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Micro
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Project.exe
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Project.pdb
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\BMW.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\SpriteFont1.xnb

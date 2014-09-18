@@ -29,6 +29,8 @@ namespace Project
 
         public Car car;
 
+        SpriteFont Font;
+
         /*public Vector2[] Array = new Vector2[]
         {
             new Vector2(-35, -35),
@@ -78,6 +80,8 @@ namespace Project
 
             camera = new Camera(car);
 
+            Font = Content.Load<SpriteFont>("SpriteFont1");
+
             base.Initialize();
         }
 
@@ -103,6 +107,12 @@ namespace Project
             GraphicsDevice.Clear(Microsoft.Xna.Framework.Color.CornflowerBlue);
 
             //Drawing.ArrayVectors(Array, this);
+
+            /*spriteBatch.Begin();
+
+            spriteBatch.DrawString(Font, car.Body.GetAngle().ToString(), new Vector2(0, 0), Microsoft.Xna.Framework.Color.Black);
+
+            spriteBatch.End();*/
 
             base.Draw(gameTime);
         }

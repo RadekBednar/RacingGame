@@ -12,8 +12,8 @@ FBXHeaderExtension:  {
 		Month: 09
 		Day: 18
 		Hour: 14
-		Minute: 00
-		Second: 18
+		Minute: 51
+		Second: 54
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,7 +21,7 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2014-09-18 14:00:18:000"
+CreationTime: "2014-09-18 14:51:54:000"
 Creator: "Blender version 2.71 (sub 0)"
 
 ; Object definitions
@@ -141,8 +141,8 @@ Objects:  {
 		Properties60:  {
 			Property: "QuaternionInterpolate", "bool", "",0
 			Property: "Visibility", "Visibility", "A+",1
-			Property: "Lcl Translation", "Lcl Translation", "A+",0.000000238418579,0.000000000000000,2.033743619918823
-			Property: "Lcl Rotation", "Lcl Rotation", "A+",0.000000000000000,-0.000000000000000,0.000000000000000
+			Property: "Lcl Translation", "Lcl Translation", "A+",-0.000000238418579,0.000000000000000,2.033743619918823
+			Property: "Lcl Rotation", "Lcl Rotation", "A+",0.000000000000000,-0.000000000000000,180.000005008697713
 			Property: "Lcl Scaling", "Lcl Scaling", "A+",1.000000000000000,1.000000000000000,1.000000000000000
 			Property: "RotationOffset", "Vector3D", "",0,0,0
 			Property: "RotationPivot", "Vector3D", "",0,0,0
@@ -7647,7 +7647,7 @@ Objects:  {
 		NbPoseNodes: 1
 		PoseNode:  {
 			Node: "Model::Body"
-			Matrix: 0.000000075497901,1.000000000000000,0.000000000000000,0.000000000000000,-1.000000000000000,0.000000075497901,0.000000000000000,0.000000000000000,0.000000000000000,0.000000000000000,1.000000000000000,0.000000000000000,0.000000238418579,0.000000000000000,2.033743619918823,1.000000000000000
+			Matrix: -0.000000075497901,-1.000000000000000,0.000000000000000,0.000000000000000,1.000000000000000,-0.000000075497901,0.000000000000000,0.000000000000000,0.000000000000000,0.000000000000000,1.000000000000000,0.000000000000000,-0.000000238418579,0.000000000000000,2.033743619918823,1.000000000000000
 		}
 	}
 	GlobalSettings:  {
@@ -7714,11 +7714,11 @@ Takes:  {
 			Channel: "Transform" {
 				Channel: "T" {
 					Channel: "X" {
-						Default: 0.000000238418579
+						Default: -0.000000238418579
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,0.000000238418579,L
+							1924423250,-0.000000238418579,L
 						Color: 1,0,0
 					}
 					Channel: "Y" {
@@ -7757,11 +7757,11 @@ Takes:  {
 						Color: 0,1,0
 					}
 					Channel: "Z" {
-						Default: 0.000000000000000
+						Default: 180.000005008697713
 						KeyVer: 4005
 						KeyCount: 1
 						Key: 
-							1924423250,0.000000000000000,L
+							1924423250,180.000005008697713,L
 						Color: 0,0,1
 					}
 					LayerType: 2

@@ -7,6 +7,6 @@
   "ModelName":"BMW",
   "Density":100,
   "Friction":1,
-  "Angle":0,
+  "Angle":90,
   "Scale":0.3
 }
