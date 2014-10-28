@@ -17,18 +17,43 @@ namespace Project
     {
         Car car;
 
-        public Matrix MainView;
+        Game1 Game1;
 
-        public Camera(Car car)
+        //public Matrix MainView;
+
+        public float angleX;
+
+        public float angleZ;
+
+        public Camera(Car car, Game1 game1)
         {
             this.car = car;
 
-            MainView = Matrix.CreateLookAt(new Vector3(0, -10, 10), Vector3.Zero, Vector3.Up); //(0, 0, 5) !!!
+            this.Game1 = game1;
+
+            this.angleX = 0;
+
+            this.angleZ = 0;
+
+            //MainView = Matrix.CreateLookAt(new Vector3(0, -10, 10), Vector3.Zero, Vector3.Up); //(0, 0, 5) !!!
+
+            //-MathHelper.PiOver4 - 0.2f
         }
 
         public Matrix GetBetterView()
         {
-            return Matrix.CreateLookAt(new Vector3(car.Body.GetPosition().X, car.Body.GetPosition().Y, 10), new Vector3(car.Body.GetPosition().X, car.Body.GetPosition().Y, 0), Vector3.Up) /** Matrix.CreateRotationZ(car.Body.GetAngle())*/;
+            return Matrix.CreateTranslation(-new Vector3(car.Body.GetPosition().X, car.Body.GetPosition().Y, 0)) * Matrix.CreateRotationZ(-car.Body.GetAngle()) * Matrix.CreateRotationZ(angleZ) * Matrix.CreateRotationX(angleX)  * Matrix.CreateLookAt(new Vector3(0, 0, 7f), new Vector3(0, 0, 0), Vector3.Up);
+        }
+
+        public Matrix GetProjection()
+        {
+            //return Matrix.CreateOrthographic(Game1.GraphicsDevice.Viewport.Width / 50, Game1.GraphicsDevice.Viewport.Height / 50, -30f, 100);
+
+            //return Matrix.CreatePerspectiveOffCenter(-Game1.graphics.PreferredBackBufferWidth / 2, -Game1.graphics.PreferredBackBufferHeight / 2, Game1.graphics.PreferredBackBufferWidth, Game1.graphics.PreferredBackBufferHeight, 0.1f, 100f);
+
+            //return Matrix.CreatePerspectiveOffCenter(-0.5f, 0.5f, -0.5f, 0.5f, 0.1f, 100);
+
+            return Matrix.CreatePerspectiveFieldOfView(1, Game1.GraphicsDevice.Viewport.AspectRatio, 0.1f, 100);
         }
     }
 }

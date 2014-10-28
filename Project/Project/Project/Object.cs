@@ -31,6 +31,8 @@ namespace Project
 
         Game1 Game1;
 
+        PolygonDef poligonDef;
+
         public Object(Game game, Vector3 Position, Model Model, float Density, float Scale, Vec2[] CollisionBody)
             : base(game)
         {
@@ -54,27 +56,15 @@ namespace Project
 
         protected override void LoadContent()
         {
-            PolygonDef poligonDef = new PolygonDef();
+            poligonDef = new PolygonDef();
 
-            //poligonDef.Vertices = CollisionBody;
+            poligonDef.VertexCount = CollisionBody.Length;
 
-            //poligonDef.VertexCount = CollisionBody.Length;
+            poligonDef.Vertices = CollisionBody;
 
-            poligonDef.SetAsBox(1, 1);
+            poligonDef.Density = 2000f;
 
-            /*poligonDef.Vertices = new Vec2[]
-            {
-                new Vec2(-35, -35),
-                new Vec2(-35, 35),
-                new Vec2(35, 35),
-                new Vec2(35, -35)
-            };
-
-            poligonDef.VertexCount = 4;*/
-
-            poligonDef.Density = 20f;
-
-            poligonDef.Friction = 1f;
+            poligonDef.Friction = 100f;
 
             BodyDef bodyDef = new BodyDef();
 
@@ -109,14 +99,21 @@ namespace Project
                     effect.World = transforms[mesh.ParentBone.Index] * Matrix.CreateScale(Scale) * Matrix.CreateTranslation(new Vector3(Body.GetPosition().X, Body.GetPosition().Y, 0));
 
                     effect.View = Game1.camera.GetBetterView();
-                    
-                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
+
+                    effect.Projection = Game1.camera.GetProjection();//Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }
 
                 mesh.Draw();
             }
 
             base.Draw(gameTime);
+
+            var data = poligonDef.Vertices.Take(poligonDef.VertexCount).Select((x) => new Vector2(x.X, x.Y)).ToArray();
+
+            data = data.Select((x) => Vector2.Transform(x, Matrix.CreateRotationZ(Body.GetAngle())) + new Vector2(Body.GetPosition().X, Body.GetPosition().Y)).ToArray();
+
+            Drawing.ArrayVectors(data, Game1);
+            
         }
     }
 

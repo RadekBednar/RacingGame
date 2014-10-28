@@ -69,7 +69,7 @@ namespace Project
 
                     effect.View = Game1.camera.GetBetterView();
 
-                    effect.Projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
+                    effect.Projection = Game1.camera.GetProjection();//Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), Game1.graphics.GraphicsDevice.Viewport.AspectRatio, 1.0f, 10000.0f);
                 }
 
                 mesh.Draw();

@@ -7,7 +7,7 @@
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>-1 7.54979E-08 0 0 -7.54979E-08 -1 0 0 0 0 1 0 0 0 0 1</Transform>
-    <Positions>-1 -1 0 1 -1 0 -1 1 0 1 1 0</Positions>
+    <Positions>-5 -5 0 5 -5 0 -5 5 0 5 5 0</Positions>
     <Geometry>
       <Batch>
         <Material>#Resource1</Material>

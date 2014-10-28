@@ -8,5 +8,5 @@
   "Density":100,
   "Friction":1,
   "Angle":90,
-  "Scale":0.3
+  "Scale":1
 }

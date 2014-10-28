@@ -8,10 +8,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\Plane.xnb</Output>
-      <Time>2014-08-27T15:33:30.5311269+02:00</Time>
+      <Time>2014-10-10T19:49:38.0138421+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Plane_0.xml</Key>
-        <Value>2014-08-27T19:47:21.7549774+02:00</Value>
+        <Value>2014-10-10T19:49:52.5656744+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -21,10 +21,10 @@
       <Processor>ModelProcessor</Processor>
       <Options>None</Options>
       <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\Tires.xnb</Output>
-      <Time>2014-08-27T15:38:37.2025851+02:00</Time>
+      <Time>2014-09-26T19:53:38.6158275+02:00</Time>
       <Dependency>
         <Key>obj\x86\Debug\Tires_0.xml</Key>
-        <Value>2014-08-27T19:47:22.5720241+02:00</Value>
+        <Value>2014-09-26T19:53:41.3419834+02:00</Value>
       </Dependency>
     </Item>
     <Item>
@@ -32,34 +32,14 @@
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Plane_0.xml</Output>
-      <Time>2014-08-27T15:33:30.5311269+02:00</Time>
+      <Time>2014-10-10T19:49:38.0138421+02:00</Time>
     </Item>
     <Item>
       <Source>Tires.fbx</Source>
       <Importer>FbxImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Tires_0.xml</Output>
-      <Time>2014-08-27T15:38:37.2025851+02:00</Time>
-    </Item>
-    <Item>
-      <Source>BMW.fbx</Source>
-      <Name>BMW</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\BMW.xnb</Output>
-      <Time>2014-09-18T14:52:09.833381+02:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\BMW_0.xml</Key>
-        <Value>2014-09-18T14:52:13.0335641+02:00</Value>
-      </Dependency>
-    </Item>
-    <Item>
-      <Source>BMW.fbx</Source>
-      <Importer>FbxImporter</Importer>
-      <Options>IntermediateFile, DontCacheImportedData</Options>
-      <Output>obj\x86\Debug\BMW_0.xml</Output>
-      <Time>2014-09-18T14:52:09.833381+02:00</Time>
+      <Time>2014-09-26T19:53:38.6158275+02:00</Time>
     </Item>
     <Item>
       <Source>SpriteFont1.spritefont</Source>
@@ -69,6 +49,46 @@
       <Options>None</Options>
       <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2014-09-18T15:07:21.8252788+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Tire.fbx</Source>
+      <Name>Tire</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\Tire.xnb</Output>
+      <Time>2014-10-10T20:39:50.3651387+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Tire_0.xml</Key>
+        <Value>2014-10-10T20:58:56.4586915+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Tire.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Tire_0.xml</Output>
+      <Time>2014-10-10T20:39:50.3651387+02:00</Time>
+    </Item>
+    <Item>
+      <Source>BMW.fbx</Source>
+      <Name>BMW</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\BMW.xnb</Output>
+      <Time>2014-10-10T21:17:47.930408+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\BMW_0.xml</Key>
+        <Value>2014-10-10T21:17:57.143935+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>BMW.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\BMW_0.xml</Output>
+      <Time>2014-10-10T21:17:47.930408+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -16,5 +16,6 @@ E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Proje
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Project.exe
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\obj\x86\Debug\Project.pdb
-E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\BMW.xnb
 E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\SpriteFont1.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\Tire.xnb
+E:\Dokumenty\Projekty\Git\RacingGame\Project\Project\Project\bin\x86\Debug\Content\BMW.xnb

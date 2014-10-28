@@ -9,11 +9,11 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2014
-		Month: 08
-		Day: 27
-		Hour: 15
-		Minute: 33
-		Second: 24
+		Month: 10
+		Day: 10
+		Hour: 19
+		Minute: 49
+		Second: 12
 		Millisecond: 0
 	}
 	Creator: "FBX SDK/FBX Plugins build 20070228"
@@ -21,8 +21,8 @@ FBXHeaderExtension:  {
 		FlagPLE: 0
 	}
 }
-CreationTime: "2014-08-27 15:33:24:000"
-Creator: "Blender version 2.70 (sub 0)"
+CreationTime: "2014-10-10 19:49:12:000"
+Creator: "Blender version 2.71 (sub 0)"
 
 ; Object definitions
 ;------------------------------------------------------------------
@@ -215,7 +215,7 @@ Objects:  {
 		MultiTake: 1
 		Shading: Y
 		Culling: "CullingOff"
-		Vertices: -1.000000,-1.000000,0.000000,1.000000,-1.000000,0.000000,-1.000000,1.000000,0.000000,1.000000,1.000000,0.000000
+		Vertices: -5.000000,-5.000000,0.000000,5.000000,-5.000000,0.000000,-5.000000,5.000000,0.000000,5.000000,5.000000,0.000000
 		PolygonVertexIndex: 0,1,3,-3
 		GeometryVersion: 124
 		LayerElementNormal: 0 {
@@ -237,8 +237,8 @@ Objects:  {
 			Name: "UVMap"
 			MappingInformationType: "ByPolygonVertex"
 			ReferenceInformationType: "IndexToDirect"
-			UV: 0.999898,0.000098,0.000098,0.000102,0.999902,0.999898,0.000102,0.999902
-			UVIndex: 2,3,1,0
+			UV: 0.999902,0.999898,0.000102,0.999902,0.000098,0.000102,0.999898,0.000098
+			UVIndex: 0,1,2,3
 		}
 		LayerElementTexture: 0 {
 			Version: 101
